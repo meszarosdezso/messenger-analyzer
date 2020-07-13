@@ -30,7 +30,7 @@ To fetch a conversation's messages, you need it's id, which is the folder's name
 The ID consists of your friend's name, and some random digits after it.
 
 ```ts
-import { readConversation } from "./mod.ts"
+import { readConversation } from "https://raw.githubusercontent.com/meszarosdezso/messenger-analyzer/master/mod.ts"
 const conversation = await readConversation("NAME_AND_SOME_RANDOM_DIGITS")
 ```
 
@@ -49,6 +49,6 @@ const msgsBySenders = conversation.countMessagesBySenders()
 #### Exporting the conversation info
 
 ```ts
-import { exportConversation } from "./mod.ts"
+import { exportConversation } from "https://raw.githubusercontent.com/meszarosdezso/messenger-analyzer/master/mod.ts"
 await exportConversation(conversation)
 ```
